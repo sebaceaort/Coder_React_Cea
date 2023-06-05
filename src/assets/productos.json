@@ -1,0 +1,123 @@
+[
+    {
+      "id": 1,
+      "categoria": "hombre",
+      "precio": 29.99,
+      "descripcion": "Camiseta de algodón para hombre",
+      "imagen": "https://evalart.com/wp-content/uploads/2018/10/16pf.jpg",
+      "stock":100
+    },
+    {
+      "id": 2,
+      "categoria": "hombre",
+      "precio": 49.99,
+      "descripcion": "Pantalones vaqueros para hombre",
+      "imagen": "https://evalart.com/wp-content/uploads/2018/10/16pf.jpg",
+      "stock":100
+    },
+    {
+      "id": 3,
+      "categoria": "hombre",
+      "precio": 19.99,
+      "descripcion": "Gorra de béisbol para hombre",
+      "imagen": "https://evalart.com/wp-content/uploads/2018/10/16pf.jpg",
+      "stock":100
+    },
+    {
+      "id": 4,
+      "categoria": "hombre",
+      "precio": 39.99,
+      "descripcion": "Zapatos de cuero para hombre",
+      "imagen": "https://evalart.com/wp-content/uploads/2018/10/16pf.jpg",
+      "stock":100
+    },
+    {
+      "id": 5,
+      "categoria": "hombre",
+      "precio": 59.99,
+      "descripcion": "Chaqueta de invierno para hombre",
+      "imagen": "https://evalart.com/wp-content/uploads/2018/10/16pf.jpg",
+      "stock":100
+    },
+    {
+      "id": 6,
+      "categoria": "mujer",
+      "precio": 34.99,
+      "descripcion": "Blusa estampada para mujer",
+      "imagen": "https://evalart.com/wp-content/uploads/2018/10/16pf.jpg",
+      "stock":100
+    },
+    {
+      "id": 7,
+      "categoria": "mujer",
+      "precio": 54.99,
+      "descripcion": "Falda larga para mujer",
+      "imagen": "https://evalart.com/wp-content/uploads/2018/10/16pf.jpg",
+      "stock":100
+    },
+    {
+      "id": 8,
+      "categoria": "mujer",
+      "precio": 24.99,
+      "descripcion": "Zapatos de tacón para mujer",
+      "imagen": "https://evalart.com/wp-content/uploads/2018/10/16pf.jpg",
+      "stock":100
+    },
+    {
+      "id": 9,
+      "categoria": "mujer",
+      "precio": 44.99,
+      "descripcion": "Vestido de cóctel para mujer",
+      "imagen": "https://evalart.com/wp-content/uploads/2018/10/16pf.jpg",
+      "stock":100
+    },
+    {
+      "id": 10,
+      "categoria": "mujer",
+      "precio": 64.99,
+      "descripcion": "Abrigo de lana para mujer",
+      "imagen": "https://evalart.com/wp-content/uploads/2018/10/16pf.jpg",
+      "stock":100
+    },
+    {
+      "id": 11,
+      "categoria": "niño",
+      "precio": 14.99,
+      "descripcion": "Camiseta de manga corta para niño",
+      "imagen": "https://evalart.com/wp-content/uploads/2018/10/16pf.jpg",
+      "stock":100
+    },
+    {
+      "id": 12,
+      "categoria": "niño",
+      "precio": 24.99,
+      "descripcion": "Pantalones cortos para niño",
+      "imagen": "https://evalart.com/wp-content/uploads/2018/10/16pf.jpg",
+      "stock":100
+    },
+    {
+      "id": 13,
+      "categoria": "niño",
+      "precio": 9.99,
+      "descripcion": "Gorra de béisbol para niño",
+      "imagen": "https://evalart.com/wp-content/uploads/2018/10/16pf.jpg",
+      "stock":100
+    },
+    {
+      "id": 14,
+      "categoria": "niño",
+      "precio": 19.99,
+      "descripcion": "Zapatillas deportivas para niño",
+      "imagen": "https://evalart.com/wp-content/uploads/2018/10/16pf.jpg",
+      "stock":100
+    },
+    {
+      "id": 15,
+      "categoria": "niño",
+      "precio": 29.99,
+      "descripcion": "Chaqueta ligera para niño",
+      "imagen": "https://evalart.com/wp-content/uploads/2018/10/16pf.jpg",
+      "stock":100
+    }
+  ]
+
