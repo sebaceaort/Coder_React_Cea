@@ -11,7 +11,8 @@ const Item = ({ producto }) => {
           >
             <img
               src={producto.imagen}
-              className="card-img-top"
+              style={{ maxHeight: "250px" }}
+              className="card-img-top img-fluid w-75 justify-self-center"
               alt={producto.descripcion}
             />
             <div className="card-body">

@@ -1,9 +1,11 @@
 import { CartWidget } from "./CartWidget";
 import { NavItem } from "./NavItem";
 import logo from "../../img/ByMarianela.png";
-import { NavLink } from "react-router-dom";
-
+import { Link, NavLink } from "react-router-dom";
+import { useContext } from "react";
+import { CartContext } from "../../assets/context/CartContext";
 export const Navbar = () => {
+  const { totalItems } = useContext(CartContext);
   return (
     <>
       <nav className="navbar navbar-expand-lg bg-body-tertiary">
@@ -33,7 +35,9 @@ export const Navbar = () => {
               <NavItem title={"Destacado"} path={"/destacado"}/>
             </div>
           </div>
-          <CartWidget number={3} />
+          <Link className="link-dark text-decoration-none" to={"/cart"}> 
+            <CartWidget number={totalItems()} />
+          </Link>
         </div>
       </nav>
     </>

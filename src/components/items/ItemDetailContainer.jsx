@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
-import productos from "../../assets/productos.json";
+import { getFirestore,doc, getDoc } from "firebase/firestore";
 import ItemDetail from "./ItemDetail";
 
 const ItemDetailContainer = () => {
@@ -8,15 +8,11 @@ const ItemDetailContainer = () => {
     const {id} = useParams();
 
     useEffect(() => {
-        const promesa = new Promise((resolve) => {
-            setTimeout(() => {
-                resolve(productos.find(item => item.id === parseInt(id)));
-            }, 2000);
-        });
-
-        promesa.then(data => {
-            setItem(data);
-        });
+        const db= getFirestore();
+        const producto=doc(db,"items",id);
+        getDoc(producto).then((data) => {
+            setItem({...data.data(), id: data.id});
+        })
     }, [id]);
 
     return (

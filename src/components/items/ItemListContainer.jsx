@@ -1,27 +1,34 @@
 import { useEffect, useState } from "react";
-import productos from "../../assets/productos.json";
+import { Loading } from "../Loading";
+import {
+  collection,
+  getFirestore,
+  query,
+  where,
+  getDocs,
+} from "firebase/firestore";
 import { useParams } from "react-router-dom";
-import Item from './Item'
+import Item from "./Item";
 
 export const ItemListContainer = () => {
   const [items, setItems] = useState([]);
+  const [isLoading, setIsLoading] = useState(true);
   const { category } = useParams();
   useEffect(() => {
-    const promesa = new Promise((resolve) => {
-      setTimeout(() => {
-        resolve(
-          category
-            ? productos.filter((producto) => producto.categoria === category)
-            : productos
-        );
-      }, 1000);
-    });
-    promesa.then((data) => {
-      setItems(data);
+    const db = getFirestore();
+    const itemsCollection = collection(db, "items");
+    const q = category
+      ? query(itemsCollection, where("categoria", "==", category))
+      : itemsCollection;
+    getDocs(q).then((data) => {
+      setItems(data.docs.map((doc) => ({ ...doc.data(), id: doc.id })));
+      setIsLoading(false);
     });
   }, [category]);
 
-  return (
+  return isLoading ? (
+    <Loading />
+  ) : (
     <div className="container">
       <div className="row">
         {items.map((producto) => (
